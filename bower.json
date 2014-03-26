@@ -1,8 +1,8 @@
 {
   "name": "ol3-scripts",
   "version": "0.0.1",
-  "main": ["ol.js", "ol.css"],
-  "location": "https://github.com/luscus/ol3-scripts",
+  "main": ["ol-whitespace.js", "ol.css"],
+  "location": "https://github.com/hdaraujo/ol3-scripts.git",
   "description": "ol3-scripts only wraps the compiled OpenLayers 3.x scripts available at http://ol3js.org/en/master/build",
   "keywords": [
     "openlayers",
