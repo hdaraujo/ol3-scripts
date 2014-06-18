@@ -27595,7 +27595,7 @@ ol.control.ScaleLine.prototype.updateElement_ = function() {
   var projectionUnits = projection.getUnits();
   var cosLatitude;
   var units = this.getUnits();
-  if(projectionUnits == ol.proj.Units.DEGREES && (units == ol.control.ScaleLineUnits.METRIC || units == ol.control.ScaleLineUnits.IMPERIAL)) {
+  if(projectionUnits == ol.proj.Units.DEGREES && (units == ol.control.ScaleLineUnits.METRIC || units == ol.control.ScaleLineUnits.IMPERIAL || units == ol.control.ScaleLineUnits.NAUTICAL)) {
     this.toEPSG4326_ = null;
     cosLatitude = Math.cos(goog.math.toRadians(center[1]));
     pointResolution *= Math.PI * cosLatitude * ol.sphere.NORMAL.radius / 180;
@@ -27616,7 +27616,7 @@ ol.control.ScaleLine.prototype.updateElement_ = function() {
       this.toEPSG4326_ = null
     }
   }
-  goog.asserts.assert((units == ol.control.ScaleLineUnits.METRIC || units == ol.control.ScaleLineUnits.IMPERIAL) && projectionUnits == ol.proj.Units.METERS || units == ol.control.ScaleLineUnits.DEGREES && projectionUnits == ol.proj.Units.DEGREES);
+  goog.asserts.assert((units == ol.control.ScaleLineUnits.METRIC || units == ol.control.ScaleLineUnits.IMPERIAL || units == ol.control.ScaleLineUnits.NAUTICAL) && projectionUnits == ol.proj.Units.METERS || units == ol.control.ScaleLineUnits.DEGREES && projectionUnits == ol.proj.Units.DEGREES);
   var nominalCount = this.minWidth_ * pointResolution;
   var suffix = "";
   if(units == ol.control.ScaleLineUnits.DEGREES) {
@@ -27648,7 +27648,7 @@ ol.control.ScaleLine.prototype.updateElement_ = function() {
     }else {
       if(units == ol.control.ScaleLineUnits.NAUTICAL) {
         pointResolution /= 1852;
-        suffix = "nm"
+        suffix = "NM"
       }else {
         if(units == ol.control.ScaleLineUnits.METRIC) {
           if(nominalCount < 1) {
