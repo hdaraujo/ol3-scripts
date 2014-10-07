@@ -1,17 +1,17 @@
 {
-  "name": "ol3-scripts",
-  "version": "0.0.1",
-  "homepage": "https://github.com/hdaraujo/ol3-scripts.git",
-  "description": "ol3-scripts only wraps the compiled OpenLayers 3.x scripts available at http://ol3js.org/en/master/build",
-  "keywords": [
-    "openlayers",
-    "openlayers 3",
-    "ol3"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/hdaraujo/ol3-scripts.git"
-  }
+    "name": "ol3-scripts",
+    "version": "3.0.0",
+    "homepage": "https://github.com/hdaraujo/ol3-scripts.git",
+    "description": "ol3-scripts only wraps the compiled OpenLayers v 3.0.0 scripts available at https://github.com/openlayers/ol3/releases/download/v3.0.0/v3.0.0.zip",
+    "keywords": [
+        "openlayers",
+        "openlayers 3",
+        "ol3"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/hdaraujo/ol3-scripts.git"
+    }
 }
 
 
