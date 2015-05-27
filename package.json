@@ -2,7 +2,7 @@
     "name": "ol3-scripts",
     "version": "3.3.0",
     "homepage": "https://github.com/hdaraujo/ol3-scripts.git",
-    "description": "ol3-scripts only wraps the compiled OpenLayers v3.3.0 scripts available at https://github.com/openlayers/ol3/releases/download/v3.3.0/v3.3.0.zip",
+    "description": "ol3-scripts only wraps the compiled OpenLayers v3.4.0 scripts available at https://github.com/openlayers/ol3/releases/download/v3.4.0/v3.4.0.zip",
     "keywords": [
         "openlayers",
         "openlayers 3",
